@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+nav{
+    background-color: slategray;
+    height: 100px;
+    width: 100%;
+}
+nav img{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    
+}
+a .active, a:hover{
+    background: rgb(130, 138, 138);
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: goldenrod;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        /* background: none; */
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+#toplogo{
+    width: 10%;
+    padding: 0px;
+    margin:0 40% 0 40%;   
+}
+.sec2{
+    background: url(/Assets/mr_coffee_salle.jpg)no-repeat;
+    margin: 1%;
+    background-size:100%;
+    height: calc(100vh);
+}
+.footerlogo{
+   
+    height: 80px;
+    padding: 10px;
+}
+/* .social{
+    text-align: center;
+}
+.icon{
+display:inline-block;
+
+  margin: auto 0 0 auto ;
+  width: 10%;   
+} */
+
+footer{
+    display:flex;  
+    /* padding-top: 20px; */
+    height: auto;
+    width: 100vw;
+    background-color: slategray;
+} 
+.footer-content{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-content h3{
+font-size: 1.8rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+.footer-content{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+.socials img{
+    height: 30px;
+    width: 20px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.midhead{
+text-align: center;
+
+}
+
+.mapimg{
+    margin:0 20% 0;
+    padding-bottom: 2%;
+}
+.mapinfo{
+    margin: 5% 20%;
+}
+/* card view */
+.card{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+
+
+}
+.card img{
+    height: 100px;
+    width: 80px;    
+}
+
+h4{
+    color: white;
+    font-weight: 600;
+    margin: 10px 0;
+}
+p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding :10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.card-col{
+ 
+    flex-basis: 32%;
+    background:  rgba(170, 172, 175, 0.801);
+    border-radius: 5px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+.card-col:hover{
+    box-shadow: 0 0 20px 0px rgba(98, 199, 51, 0.781);
+    transition: .5s;
+}
+@media(max-width:700px){
+    .row{flex-direction: column;
+    }
+}
+ /* Last section */
+ 
+ .icon-open{
+     height: 100px;
+     width: 80px;
+ }
+ button{
+     margin: 0 40%;
+     height: 50px;
+     width: 150px;
+ }
+ .lastsec p{
+     display: flex;
+    color: black;
+    flex-basis: 32%;
+    border-radius: 5px;
+     padding: 20px 12px;
+     margin-bottom: 5%;
+     box-sizing: border-box;
+     
+ }
+ .lastsec{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ @media(max-width:700px){
+    last-col{flex-direction: column;
+    }
+
+}
+#lasec h3{
+    margin: 5%;
+    text-align: center;
+}
