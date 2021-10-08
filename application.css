@@ -247,6 +247,35 @@ p{
 
 }
 #lasec h3{
+   
     margin: 5%;
     text-align: center;
 }
+.aboutdiv{
+   display: flex;
+
+}
+.aboutdiv h4{
+    color: black;
+}
+.aboutdiv p{
+    color: black;
+}
+.secondabout{
+    display: flex;
+    
+}
+.secondabout h4{
+    color: black;
+}
+.secondabout p{
+    color: black;
+}
+/* .salle2{
+    width: 100px;
+    height: 20px;
+}
+.chez-img{
+height: 10px;
+width: 10px;
+}  */
