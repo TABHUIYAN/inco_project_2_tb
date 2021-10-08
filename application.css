@@ -158,7 +158,11 @@ text-align: center;
     padding-bottom: 2%;
 }
 .mapinfo{
+   
     margin: 5% 20%;
+}
+.mapinfo p{
+    color: black;
 }
 /* card view */
 .card{
